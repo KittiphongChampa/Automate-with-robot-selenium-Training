@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-03-13T17:36:41.613444" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc 1" source="C:\robot\doptraining\dop-train-11-03-25\all file\Api\testcases\tc_1.robot">
+<test id="s1-t1" name="TC_1" line="6">
+<kw name="Search item" owner="search_page">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-03-13T17:36:42.875506" level="INFO">Creating Session using : alias=search_session, url=https://training-platform.doppio-tech.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>search_session</arg>
+<arg>${base_url}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-03-13T17:36:42.875506" elapsed="0.000000"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-03-13T17:36:42.876515" level="INFO">${header} = {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3Rfc2lnbnVwQG1haWwuY29tIiwiaWQiOjEyMjc4fQ.fcxZsFzN4ul4oDYG8hXH0mbl2w9AmlUPJRfVmm7lf3Y'}</msg>
+<var>${header}</var>
+<arg>token=${token}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-03-13T17:36:42.876515" elapsed="0.000000"/>
+</kw>
+<kw name="Load Json From File" owner="JSONLibrary">
+<msg time="2025-03-13T17:36:42.877507" level="INFO">${file_data} = {'text': 'Phone'}</msg>
+<var>${file_data}</var>
+<arg>C:\\robot\\doptraining\\dop-train-11-03-25\\all file\\Api\\keywords\\pages/../../resources/settings/search_template.json</arg>
+<doc>Load JSON from file.</doc>
+<status status="PASS" start="2025-03-13T17:36:42.876515" elapsed="0.000992"/>
+</kw>
+<kw name="Update Value To Json" owner="JSONLibrary">
+<msg time="2025-03-13T17:36:42.896412" level="INFO">${file_data} = {'text': 'phone'}</msg>
+<var>${file_data}</var>
+<arg>${file_data}</arg>
+<arg>$..text</arg>
+<arg>${text_search}</arg>
+<doc>Update value to JSON using JSONPath</doc>
+<status status="PASS" start="2025-03-13T17:36:42.877507" elapsed="0.018905"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-03-13T17:36:43.103743" level="INFO">GET Request : url=https://training-platform.doppio-tech.com/api/product/search?text=phone 
+ path_url=/api/product/search?text=phone 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3Rfc2lnbnVwQG1haWwuY29tIiwiaWQiOjEyMjc4fQ.fcxZsFzN4ul4oDYG8hXH0mbl2w9AmlUPJRfVmm7lf3Y'} 
+ body=None 
+ </msg>
+<msg time="2025-03-13T17:36:43.103743" level="INFO">GET Response : url=https://training-platform.doppio-tech.com/api/product/search?text=phone 
+ status=200, reason=OK 
+ headers={'Date': 'Thu, 13 Mar 2025 10:36:42 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'cf-cache-status': 'DYNAMIC', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=nUwSZva4k2QDtY09k3AS1Dpl1Wg2LtTtbmCvz5i3PDqzkKlGBEbjdUSdO6ltyQmjm0gk1YyEg8Hb7Ce7AMb56c3l%2FbjTsir2iGhTlktKvb9Ti8Cp93p6pkUCJ5JP0xLYdYGbT65WmyUoumZ3%2BGmAciroqg4%3D"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '91fae44eb9455cdc-SIN', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=27650&amp;min_rtt=27564&amp;rtt_var=10508&amp;sent=4&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2850&amp;recv_bytes=964&amp;delivery_rate=102789&amp;cwnd=249&amp;unsent_bytes=0&amp;cid=d464baf7bd2dbaf0&amp;ts=114&amp;x=0"'} 
+ body={"product":[{"crossOutPrice":60000.0,"currency":"THB","description":"good","discount":0.0,"id":5,"image_url":"","name":"Eoppee phone","price":60000.0,"qty":126},{"crossOutPrice":50000.0,"currency":"THB","description":"good","discount":20.0,"id":4,"image_url":"https://t4.ftcdn.net/jpg/03/01/83/01/360_F_301830112_dSHXcFf9OHOj6HBpaDsAa1gAtz3hwheP.jpg","name":"Coppee phone 1","price":49980.0,"qty":100},{"crossOutPrice":30000.0,"currency":"THB","description":"good","discount":11.0,"id":236,"image_url":null,"name":"Aoppee phone","price":29989.0,"qty":19},{"crossOutPrice":30000.0,"currency":"THB","description":"good","discount":299.0,"id":235,"image_url":null,"name":"Aoppee Phone","price":29701.0,"qty":124},{"crossOutPrice":20000.0,"currency":"THB","description":"Greate phone","discount":20.0,"id":1,"image_url":"https://www.publicdomainpictures.net/pictures/400000/nahled/image-1618560279s1o.png","name":"Doppee phone","price":19980.0,"qty":44},{"crossOutPrice":6000.0,"currency":"THB","description":"test","discount":100.0,"id":10,"image_url":null,"name":"Eoppee phone","price":5900.0,"qty":133},{"crossOutPrice":666.0,"currency":"THB","description":"even gooderterestest","discount":0.0,"id":32,"image_url":null,"name":"Zoppee phone","price":666.0,"qty":133},{"crossOutPrice":530.0,"currency":"THB","description":"\u0e2b\u0e22\u0e2d\u0e14\u0e40\u0e2b\u0e23\u0e35\u0e22\u0e0d \u0e2b\u0e49\u0e32\u0e1a\u0e32\u0e17","discount":120.0,"id":6,"image_url":"https://png.pngtree.com/element_our/png_detail/20181102/old-telephone-red-vending-machine.-png_227627.jpg","name":"Retro phone \u0e40\u0e17\u0e2a","price":410.0,"qty":133},{"crossOutPrice":100.0,"currency":"THB","description":"kawaii","discount":10.0,"id":209,"image_url":"https://th-live-01.slatic.net/p/50b5be5b112010039a07a4c948a3aada.jpg","name":"kitty phone","price":90.0,"qty":133},{"crossOutPrice":11.0,"currency":"THB","description":"kawaii","discount":0.0,"id":210,"image_url":"https://media.naheed.pk/catalog/product/cache/49dcd5d85f0fa4d590e132d0368d8132/1/1/1174732-1.jpg","name":"doraemon phone","price":11.0,"qty":120}],"promotion":[]}
+ 
+ </msg>
+<msg time="2025-03-13T17:36:43.104866" level="INFO">C:\Users\Kittiphong.c\AppData\Roaming\Python\Python312\site-packages\urllib3\connectionpool.py:1099: InsecureRequestWarning: Unverified HTTPS request is being made to host 'training-platform.doppio-tech.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-03-13T17:36:43.105763" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>search_session</arg>
+<arg>url=/api/product/search?</arg>
+<arg>params=${file_data}</arg>
+<arg>headers=${header}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-03-13T17:36:42.896412" elapsed="0.209351"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-03-13T17:36:43.129757" level="INFO">${discount} = [0.0, 20.0, 11.0, 299.0, 20.0, 100.0, 0.0, 120.0, 10.0, 0.0]</msg>
+<var>${discount}</var>
+<arg>${response.json()}</arg>
+<arg>$..discount</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-03-13T17:36:43.105763" elapsed="0.023994"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2025-03-13T17:36:43.146760" level="INFO">${result} = ['Zoppee phone']</msg>
+<var>${result}</var>
+<arg>${response.json()}</arg>
+<arg>$.product[?(@.name=="Zoppee phone")].name</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2025-03-13T17:36:43.130759" elapsed="0.016001"/>
+</kw>
+<return>
+<value>${result}[0]</value>
+<status status="PASS" start="2025-03-13T17:36:43.146760" elapsed="0.000000"/>
+</return>
+<msg time="2025-03-13T17:36:43.146760" level="INFO">${receive} = Zoppee phone</msg>
+<var>${receive}</var>
+<arg>phone</arg>
+<status status="PASS" start="2025-03-13T17:36:42.874409" elapsed="0.272351"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${receive}</arg>
+<arg>Zoppee phone</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-03-13T17:36:43.147757" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2025-03-13T17:36:42.874409" elapsed="0.274349"/>
+</test>
+<status status="PASS" start="2025-03-13T17:36:41.616442" elapsed="1.533324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc 1">Tc 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

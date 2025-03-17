@@ -1,0 +1,18 @@
+email : test@gmail.com
+name : kittiphong champa
+password : 1234
+confirm_password : 1234
+nickname : yun
+province : Bangkok
+postcode : 10400
+country : Thailand
+
+personal_information :
+  email : test@gmail.com
+  name : kittiphong champa
+  password : 1234
+  confirm_password : 1234
+  nickname : yun
+  province : Bangkok
+  postcode : 10400
+  country : Thailand

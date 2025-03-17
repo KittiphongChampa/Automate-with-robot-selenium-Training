@@ -1,0 +1,11 @@
+username : 'admin'
+time : 10
+pi : 3.1415
+x : 5
+Y : 6
+array : ['Batman','Superman','WonderWomen','Flash']
+dictionary :
+  Hero : 'Ironman'
+  Villain : 'Thanos'
+  Anti-Hero : 'Deadpool'
+  array : ['yun','nick','cat']

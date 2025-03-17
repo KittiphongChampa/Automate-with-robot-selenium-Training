@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-03-13T11:41:43.831120" rpa="false" schemaversion="5">
+<suite id="s1" name="Train3-1" source="C:\robot\doptraining\dop-train-11-03-25\all file\train3-1.robot">
+<test id="s1-t1" name="TC_4" line="72">
+<kw name="function3">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>---------------2.a แสดงทุกค่าใน List----------------</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.147636" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.148623" elapsed="0.000000"/>
+</kw>
+<var name="${index}">batman</var>
+<status status="PASS" start="2025-03-13T11:41:44.147636" elapsed="0.000987"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.148623" elapsed="0.000000"/>
+</kw>
+<var name="${index}">superman</var>
+<status status="PASS" start="2025-03-13T11:41:44.148623" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.148623" elapsed="0.000998"/>
+</kw>
+<var name="${index}">wonder women</var>
+<status status="PASS" start="2025-03-13T11:41:44.148623" elapsed="0.000998"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.149621" elapsed="0.000000"/>
+</kw>
+<var name="${index}">Flash</var>
+<status status="PASS" start="2025-03-13T11:41:44.149621" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.149621" elapsed="0.000924"/>
+</kw>
+<var name="${index}">Ironman</var>
+<status status="PASS" start="2025-03-13T11:41:44.149621" elapsed="0.000924"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.150545" elapsed="0.000000"/>
+</kw>
+<var name="${index}">Aquaman</var>
+<status status="PASS" start="2025-03-13T11:41:44.150545" elapsed="0.000000"/>
+</iter>
+<var>${index}</var>
+<value>@{Hero}</value>
+<status status="PASS" start="2025-03-13T11:41:44.147636" elapsed="0.002909"/>
+</for>
+<status status="PASS" start="2025-03-13T11:41:44.146623" elapsed="0.003922"/>
+</kw>
+<kw name="function4">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>---------2.b แสดงทุกค่าใน List ยกเว้น Ironman---------</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.151558" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.151558" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.151558" elapsed="0.000000"/>
+</kw>
+<var name="${index}">batman</var>
+<status status="PASS" start="2025-03-13T11:41:44.151558" elapsed="0.000998"/>
+</iter>
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.152556" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.153062" elapsed="0.000000"/>
+</kw>
+<var name="${index}">superman</var>
+<status status="PASS" start="2025-03-13T11:41:44.152556" elapsed="0.000506"/>
+</iter>
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.153062" elapsed="0.001486"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.154548" elapsed="0.001022"/>
+</kw>
+<var name="${index}">wonder women</var>
+<status status="PASS" start="2025-03-13T11:41:44.153062" elapsed="0.002508"/>
+</iter>
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.156559" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.156559" elapsed="0.001005"/>
+</kw>
+<var name="${index}">Flash</var>
+<status status="PASS" start="2025-03-13T11:41:44.155570" elapsed="0.001994"/>
+</iter>
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<msg time="2025-03-13T11:41:44.158583" level="INFO">Continuing for loop from the next iteration.</msg>
+<arg>"${index}"=="Ironman"</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.157564" elapsed="0.001019"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-13T11:41:44.158583" elapsed="0.000000"/>
+</kw>
+<var name="${index}">Ironman</var>
+<status status="PASS" start="2025-03-13T11:41:44.157564" elapsed="0.001019"/>
+</iter>
+<iter>
+<kw name="Continue For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Skips the current FOR loop iteration if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.159563" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.159563" elapsed="0.001001"/>
+</kw>
+<var name="${index}">Aquaman</var>
+<status status="PASS" start="2025-03-13T11:41:44.159563" elapsed="0.001001"/>
+</iter>
+<var>${index}</var>
+<value>@{Hero}</value>
+<status status="PASS" start="2025-03-13T11:41:44.151558" elapsed="0.009006"/>
+</for>
+<status status="PASS" start="2025-03-13T11:41:44.150545" elapsed="0.010019"/>
+</kw>
+<kw name="function5">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>-----2.c แสดงทุกค่าใน List และ brake ก่อน Ironman----</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.161559" elapsed="0.001031"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.163559" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.163559" elapsed="0.001000"/>
+</kw>
+<var name="${index}">batman</var>
+<status status="PASS" start="2025-03-13T11:41:44.162590" elapsed="0.001969"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.164559" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.164559" elapsed="0.001025"/>
+</kw>
+<var name="${index}">superman</var>
+<status status="PASS" start="2025-03-13T11:41:44.164559" elapsed="0.001025"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.165584" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.165584" elapsed="0.000992"/>
+</kw>
+<var name="${index}">wonder women</var>
+<status status="PASS" start="2025-03-13T11:41:44.165584" elapsed="0.000992"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.166576" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.166576" elapsed="0.000000"/>
+</kw>
+<var name="${index}">Flash</var>
+<status status="PASS" start="2025-03-13T11:41:44.166576" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-03-13T11:41:44.167557" level="INFO">Exiting for loop altogether.</msg>
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.166576" elapsed="0.000981"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-03-13T11:41:44.167557" elapsed="0.000000"/>
+</kw>
+<var name="${index}">Ironman</var>
+<status status="PASS" start="2025-03-13T11:41:44.166576" elapsed="0.000981"/>
+</iter>
+<var>${index}</var>
+<value>@{Hero}</value>
+<status status="PASS" start="2025-03-13T11:41:44.162590" elapsed="0.004967"/>
+</for>
+<status status="PASS" start="2025-03-13T11:41:44.161559" elapsed="0.005998"/>
+</kw>
+<kw name="function6">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>-----2.c แสดงทุกค่าใน List และ brake หลัง Ironman----</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.167557" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.167557" elapsed="0.001508"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.169065" elapsed="0.000000"/>
+</kw>
+<var name="${index}">batman</var>
+<status status="PASS" start="2025-03-13T11:41:44.167557" elapsed="0.001508"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.170092" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.170092" elapsed="0.000000"/>
+</kw>
+<var name="${index}">superman</var>
+<status status="PASS" start="2025-03-13T11:41:44.170092" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.170092" elapsed="0.001009"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.171101" elapsed="0.000000"/>
+</kw>
+<var name="${index}">wonder women</var>
+<status status="PASS" start="2025-03-13T11:41:44.170092" elapsed="0.001009"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.171101" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.171101" elapsed="0.000996"/>
+</kw>
+<var name="${index}">Flash</var>
+<status status="PASS" start="2025-03-13T11:41:44.171101" elapsed="0.000996"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.172097" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-03-13T11:41:44.172097" level="INFO">Exiting for loop altogether.</msg>
+<arg>"${index}"=="Ironman"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T11:41:44.172097" elapsed="0.000000"/>
+</kw>
+<var name="${index}">Ironman</var>
+<status status="PASS" start="2025-03-13T11:41:44.172097" elapsed="0.000000"/>
+</iter>
+<var>${index}</var>
+<value>@{Hero}</value>
+<status status="PASS" start="2025-03-13T11:41:44.167557" elapsed="0.004540"/>
+</for>
+<status status="PASS" start="2025-03-13T11:41:44.167557" elapsed="0.004540"/>
+</kw>
+<status status="PASS" start="2025-03-13T11:41:44.146623" elapsed="0.025474"/>
+</test>
+<status status="PASS" start="2025-03-13T11:41:43.832259" elapsed="0.340855"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Train3-1">Train3-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

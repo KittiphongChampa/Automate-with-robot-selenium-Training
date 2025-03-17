@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Full registration</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Antic;
+      font-size: 20px;
+      color: #666;
+      }
+      h1 {
+      margin: 0;
+      font-weight: 400;
+      }
+      h3 {
+      margin: 12px 0;
+      color: #007acc;
+      }
+      .main-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      }
+      form {
+      width: 100%;
+      padding: 20px;
+      }
+      fieldset {
+      border: none;
+      border-top: 1px solid #007acc;
+      }
+      .account-details, .personal-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      .account-details >div, .personal-details >div >div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      }
+      .account-details >div, .personal-details >div, input, label {
+      width: 100%;
+      }
+      label {
+      padding: 0 5px;
+      text-align: right;
+      vertical-align: middle;
+      }
+      input {
+      padding: 5px;
+      vertical-align: middle;
+      }
+      .checkbox {
+      margin-bottom: 10px;
+      }
+      select, .children, .gender, .bdate-block {
+      width: calc(100% + 26px);
+      padding: 5px 0;
+      }
+      select {
+      background: transparent;
+      }
+      .gender input {
+      width: auto;
+      } 
+      .gender label {
+      padding: 0 5px 0 0;
+      } 
+      .bdate-block {
+      display: flex;
+      justify-content: space-between;
+      }
+      .birthdate select.day {
+      width: 35px;
+      }
+      .birthdate select.mounth {
+      width: calc(100% - 94px);
+      }
+      .birthdate input {
+      width: 38px;
+      vertical-align: unset;
+      }
+      .checkbox input, .children input {
+      width: auto;
+      margin: -2px 10px 0 0;
+      }
+      .checkbox a {
+      color: #007acc;
+      }
+      .checkbox a:hover {
+      color: #82b534;
+      }
+      button {
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background: #007acc; 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+      button:hover {
+      background: #82b534;
+      }
+      @media (min-width: 568px) {
+      .account-details >div, .personal-details >div {
+      width: 50%;
+      }
+      label {
+      width: 40%;
+      }
+      input {
+      width: 60%;
+      }
+      .success-text{
+        font-size: 20px;
+        color: green;
+      }
+      select, .children, .gender, .bdate-block {
+      width: calc(60% + 16px);
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+    <form >
+      <h1>Create a free account</h1>
+      <fieldset>
+        <legend>
+          <h3> Account</h3>
+        </legend>
+        <div  class="account-details">
+          <div><label>Email</label><input id="txtEmail" type="text"></div>
+          <div><label>Password</label><input type="password" name="pwdNameBox" ></div>
+          <div><label>Repeat password</label><input type="password" class="pwdconpass" ></div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Personal</h3>
+        </legend>
+        <div  class="personal-details">
+          <div class="sub-section">
+            <div><label>Name</label><input type="text" id="txtName" ></div>
+            <div class="element-input"><label>City</label><input type="text" automate-id="cityBox" ></div>
+            <div>
+              <label>Country</label>  
+              <select id="countryBox"">
+                <option value=""></option>
+                <option value="Armenia">Armenia</option>
+                <option value="Russia">Russia</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="USA">USA</option>
+                <option value="TH">Thailand</option>
+                <option value="UK">UK</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label>Gender</label>
+              <div class="gender">
+                <input type="radio" value="male_choice" id="male" name="gender" />
+                <label for="male" class="radio">Male</label>
+                <input type="radio" value="female_choice" id="female" name="gender" />
+                <label for="female" class="radio">Female</label>
+              </div>
+            </div>
+            <div class="birthdate">
+              <label>Birthdate</label>
+              <div class="bdate-block">
+                <select id="bday" class="day" >
+                  <option value=""></option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <select id="bmonth" class="mounth" >
+                  <option value=""></option>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+                <input id="byear" type="text" name="name" >
+              </div>
+            </div>
+
+    
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>
+          <h3>Terms</h3>
+        </legend>
+        <div  class="terms-mailing">
+          <div class="checkbox">
+            <input type="checkbox" name="acceptbox"><span>I Accept everything</a></span>
+          </div>
+
+
+      </fieldset>
+
+
+      <div>
+        <p id="succesText" class="success-text"></p>
+      </div>
+      <button type='button' onclick="myFunction()" >Submit</button>
+      <script>
+        function myFunction() {
+            console.log("click")
+          let a = document.getElementById("succesText");
+          console.log(a);
+          let b = Math.floor(Math.random() * 899999 + 100000)
+          a.textContent = "Success, your account has been created, your account id is " + b.toString();
+        }
+        </script>
+      </form>
+    </div> 
+  </body>
+</html>

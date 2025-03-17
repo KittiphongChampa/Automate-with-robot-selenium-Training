@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2025-03-13T09:43:31.450173" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc1" source="C:\robot\doptraining\dop-train-11-03-25\Templatefile\testcases\tc1.robot">
+<test id="s1-t1" name="Submit form" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:31.876461" level="INFO">Opening browser 'chrome' to base url 'file:///C:/robot/doptraining/dop-train-11-03-25/FileWeb/locator2.html'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-13T09:43:31.876461" elapsed="2.536230"/>
+</kw>
+<kw name="Input_email" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:34.413691" level="INFO">Typing text 'test@gmail.com' into text field 'xpath=//input[@automate-element="email"]'.</msg>
+<arg>${login_locator.locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:34.413691" elapsed="0.132790"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2025-03-13T09:43:34.412691" elapsed="0.133790"/>
+</kw>
+<kw name="Input_name" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:34.547974" level="INFO">Typing text 'kittiphong champa' into text field 'xpath=//parent::div[@id="zoneOfName"]/input[@type="text"]'.</msg>
+<arg>${login_locator.locator_name}</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:34.547974" elapsed="0.121427"/>
+</kw>
+<arg>${name}</arg>
+<status status="PASS" start="2025-03-13T09:43:34.547974" elapsed="0.121427"/>
+</kw>
+<kw name="Input_password" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:34.671393" level="INFO">Typing text '1234' into text field 'xpath=//input[@id="txtPwd-fsalsaSdssUss"]'.</msg>
+<arg>${login_locator.locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:34.671393" elapsed="0.068918"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-03-13T09:43:34.670399" elapsed="0.069912"/>
+</kw>
+<kw name="Input_confirm_password" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:34.742021" level="INFO">Typing text '1234' into text field 'xpath=//label[@label-id="confirmPwd"]/following-sibling::input'.</msg>
+<arg>${login_locator.locator_confirm_password}</arg>
+<arg>${confirm_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:34.741309" elapsed="0.058899"/>
+</kw>
+<arg>${confirm_password}</arg>
+<status status="PASS" start="2025-03-13T09:43:34.741309" elapsed="0.058899"/>
+</kw>
+<kw name="Input_nickname" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:34.801207" level="INFO">Typing text 'yun' into text field 'xpath=//label[contains(text(),"Nickname")]/following-sibling::input'.</msg>
+<arg>${login_locator.locator_nickname}</arg>
+<arg>${nickname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:34.800208" elapsed="0.092924"/>
+</kw>
+<arg>${nickname}</arg>
+<status status="PASS" start="2025-03-13T09:43:34.800208" elapsed="0.092924"/>
+</kw>
+<kw name="Input_province" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:34.894608" level="INFO">Typing text 'Bangkok' into text field 'xpath=//input[@a="id1"][1]'.</msg>
+<arg>${login_locator.locator_province}</arg>
+<arg>${province}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:34.893132" elapsed="0.061633"/>
+</kw>
+<arg>${province}</arg>
+<status status="PASS" start="2025-03-13T09:43:34.893132" elapsed="0.061633"/>
+</kw>
+<kw name="Input_postcode" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:34.956106" level="INFO">Typing text '10400' into text field 'xpath=//input[@a="id1"][2]'.</msg>
+<arg>${login_locator.locator_postcode}</arg>
+<arg>${postcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:34.956106" elapsed="0.090308"/>
+</kw>
+<arg>${postcode}</arg>
+<status status="PASS" start="2025-03-13T09:43:34.956106" elapsed="0.091313"/>
+</kw>
+<kw name="Input_country" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:35.049226" level="INFO">Typing text 'Thailand' into text field 'xpath=//input[@a="id2"][1]'.</msg>
+<arg>${login_locator.locator_country}</arg>
+<arg>${country}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:35.048705" elapsed="0.067468"/>
+</kw>
+<arg>${country}</arg>
+<status status="PASS" start="2025-03-13T09:43:35.047419" elapsed="0.068754"/>
+</kw>
+<kw name="Submit_Button" owner="login_page">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-03-13T09:43:35.117173" level="INFO">Clicking button 'xpath=//parent::div[@class="btn-block"]/button[@class="submitCls"]'.</msg>
+<arg>${login_locator.locator_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-13T09:43:35.117173" elapsed="0.074512"/>
+</kw>
+<status status="PASS" start="2025-03-13T09:43:35.117173" elapsed="0.075518"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T09:43:40.192862" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T09:43:35.192691" elapsed="5.000171"/>
+</kw>
+<status status="PASS" start="2025-03-13T09:43:31.875468" elapsed="8.317909"/>
+</test>
+<status status="PASS" start="2025-03-13T09:43:31.451173" elapsed="8.744215"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc1">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-03-13T09:43:31.788206" level="WARN">Imported resource file 'C:\robot\doptraining\dop-train-11-03-25\Templatefile\keywords\common.robot' is empty.</msg>
+<msg time="2025-03-13T09:43:31.809243" level="WARN">Imported resource file 'C:\robot\doptraining\dop-train-11-03-25\Templatefile\keywords\features\login_feature.robot' is empty.</msg>
+</errors>
+</robot>
